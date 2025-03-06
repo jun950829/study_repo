@@ -65,3 +65,17 @@ DBMS ( DataBase Management System ): 데이터 베이스를 운영하고 관리�
 
 Repository는 데이터베이스(DB)와 애플리케이션 비즈니스 로직 사이에서 데이터를 관리하는 계층입니다.
 즉, 데이터베이스와 직접 상호작용하는 객체이며, CRUD(Create, Read, Update, Delete) 작업을 추상화하여 처리합니다.
+
+![img.png](../images/springHttpReqResArcitectImg.png)
+
+### Filter
+- Request로부터 들어온 가장 날 것의 데이터가 존재
+- 들어온 데이터를 다른 데이터로 변환 한다던지, JSON body에 대해서 모든 내용을 기록한다던지하는 log 시스템 활용
+
+
+### Handler Interceptor
+- spirng에서 관리하는 bean
+- 이미 handler mapping을 통해 어디로 가야할지 알고 있기 때문에 해당 컨트롤러가 가지고 있는 어노테이션을 찾아서 무언가 작동을 한다던지, 헤더에 있는 내용을 보고 권한 검사를 한다던지 주로 인증관련 로직을 많이 함
+
+
+
