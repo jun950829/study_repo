@@ -11,7 +11,7 @@
 |스타일링|일반적으로 CSS-in-JS, Tailwind 사용|기본적으로 스타일 최적화, CSS Modules, Styled JSX 지원|
 
 
-## React와 Next.js, 언제 선택해야 할까?
+## React와 Next.js, 언제 선택해야 할까??
 ### React를 선택해야 할 때
 
 1. SPA (Single Page Application) 개발: SEO가 중요하지 않고, CSR로도 충분한 경우.
