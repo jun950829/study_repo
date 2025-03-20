@@ -130,3 +130,10 @@ Factory는 객체 생성을 캡슐화하는 패턴으로, 복잡한 객체를 �
 
 - 생성 로직이 간단한 경우 (단순한 엔티티 생성은 생성자 사용 가능)
 - 객체 생성 후 수정이 많을 경우
+
+###   Filter는 주로 **Presentation Layer(프레젠테이션 계층)**에서 처리됩니다.
+  즉, 요청(Request)과 응답(Response)에 대한 전처리 및 후처리 역할을 하며, 가장 바깥단에서 동작합니다.
+
+
+### Exception 처리 위치
+Exception(예외)은 Service Layer(서비스 계층)에서 발생하고, Controller Layer(프레젠테이션 계층)에서 처리하는 것이 일반적입니다.
