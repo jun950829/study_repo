@@ -1,10 +1,15 @@
-# React Provider의 정의
+# Context & Provider
+Context는 전역 상태를 저장하는 곳이다. Context 내부에 Provider와 Consumer가 정의되어있고, Consumer는 Context를 통해서 상태에 접근이 가능하다. Provider는 전역 상태를 제공하는 역할을 한다
+
+
+
+## React Provider의 정의
 ### React Provider는 Context API의 구성 요소 중 하나로, 특정 데이터를 React 컴포넌트 트리 전체에 전달할 수 있게 해주는 역할을 합니다.
 
 이때 데이터를 "전달"한다고 해서 props를 계속 아래로 넘기는 방식은 아니며, 트리의 깊은 곳에 있는 컴포넌트도 직접적으로 데이터에 접근할 수 있게 됩니다.
 
 
-## Context의 동작 원리
+## 1. Context의 동작 원리
 
 #### 1. Context 생성
 
@@ -42,7 +47,7 @@ const MyComponent = () => {
 
 
 
-## 3. Context의 동작 위치
+## 2. Context의 동작 위치
 
 - `Context.Provider`는 **React 컴포넌트 트리 안에서 동작**
 - 하위 컴포넌트는 `useContext()` 또는 `Consumer`를 통해 값에 접근
@@ -51,7 +56,7 @@ const MyComponent = () => {
 > 값은 DOM이 아니라 **React 렌더 구조 내부에서 흐름을 따름**
 
 
-## 4. 메모리 구조와 위치
+## 3. 메모리 구조와 위치
 
 | 구분 | 설명 |
 |------|------|
