@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main {
+public class TikTacTo {
 
     // --- 특정 플레이어(c)가 3칸을 이었는지 확인하는 함수 ---
     static boolean win(char[] b, char c) {
